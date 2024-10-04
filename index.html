@@ -43,6 +43,7 @@
     <h1>Компьютер загадал число от 1 до 100</h1>
     <input type="number" id="userInput" placeholder="Введите ваше число" min="1" max="100">
     <button id="submitBtn" onclick="Guess()">Угадать</button>
+    <button id="new" onclick="Restart()">Новая игра</button>
 
 
 
@@ -60,7 +61,10 @@
         const maxAttempts = 10; // Количество максимальных попыток
         const previousGuesses = []; // Массив для хранения предыдущих попыток
 
-
+function Restart()
+{
+    window.location.reload(); 
+}
 
 
         function Guess() {
